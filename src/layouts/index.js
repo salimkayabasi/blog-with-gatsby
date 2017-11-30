@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+require("prismjs/themes/prism-tomorrow.css");
+require("prismjs");
+require("prismjs/components/prism-java");
+require("prismjs/components/prism-javascript");
+
 import './index.css'
 
 const Header = () => (
