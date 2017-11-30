@@ -1,0 +1,16 @@
+language: node
+
+before_install:
+  - npm install --global gatsby-cli
+
+script:
+  - gatsby build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  fqdn: $DEPLOY_DOMAIN
+  on:
+    branch: master
