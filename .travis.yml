@@ -6,6 +6,7 @@ after_script: greenkeeper-lockfile-upload
 
 script:
   - npm install --global gatsby-cli
+  - gatsby --version
   - gatsby build
 
 deploy:
